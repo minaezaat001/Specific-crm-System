@@ -1,0 +1,321 @@
+/* 
+    1-Main Style
+        1.1-Main Table Style
+    2-Main Header
+    3-Login Page
+    4-Admin Page
+        4.1-Products
+            4.1.1-Edit Form
+        4.2-Logins
+            4.2.1-To Day
+            4.2.2-By Name
+            4.2.3-By Date
+        4.3-Orders
+        4.4-Customers
+        4.5-Users
+            4.5.1-Edit Form
+    5-Order Page
+        5.1-New Order
+        5.2-All Orders
+    6-Custem Page
+        6.1-Non Confirmed
+        6.2-Comfirmed
+            6.2.1-To Day
+            6.2.2-By Name
+            6.2.3-By Date
+    7-Mian Footer
+*/
+
+/*=========================
+1-Start Main Style */
+:root {
+    --mainColor: #1f4788;
+    --black: #000000;
+    --whait: #ffffff;
+    --gray: #bdc3c7;
+}
+
+body {
+    background-color: #f1f1f1;
+    text-transform: capitalize;
+}
+
+.mainColor {
+    color: var(--mainColor);
+}
+
+.color-whait {
+    color: var(--whait);
+}
+
+.bg-main-color {
+    background-color: var(--mainColor);
+}
+
+input:focus,
+textarea {
+    outline: var(--mainColor);
+}
+
+select {
+    outline: none;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.font-size {
+    font-size: 1.3em;
+}
+
+.logo .logo-text {
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+}
+
+.click-pull {
+    cursor: pointer;
+}
+
+.btn-min:hover {
+    color: var(--mainColor);
+    background-color: transparent;
+}
+
+.bg-color-add {
+    background-color: #26a65b;
+    border: 1px solid #26a65b;
+}
+.color-add {
+    color: #26a65b;
+}
+
+.bg-color-add:hover {
+    color: #26a65b;
+}
+.remove-btn {
+    background-color: #f00;
+    border: 1px solid #f00;
+}
+
+.remove-btn:hover {
+    color: #f00;
+}
+
+.color-remove-btn {
+    color: #f00;
+}
+
+.bottom {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.title-box {
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.title-page,
+.titile-form {
+    position: relative;
+    display: inline-block;
+    color: var(--mainColor);
+}
+
+.title-page::before,
+.titile-form::before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    bottom: -15px;
+    border-radius: 70%;
+    background-color: var(--gray);
+}
+.title-page::after {
+    content: "";
+    position: absolute;
+    height: 8px;
+    width: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -17px;
+    border-radius: 10px;
+    background-color: var(--mainColor);
+}
+.titile-form::before {
+    border-radius: 0;
+    width: 40%;
+}
+/*====
+1.1 Start Main Table Style */
+.table .fa-edit {
+    font-size: 1.3em;
+    color: var(--mainColor);
+}
+
+.form-update {
+    display: none;
+}
+
+/*=========================
+1-End Main Style */
+
+/*=========================
+2-Start Main Header Style */
+.main-header .header-contanet {
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-header .list-nav {
+    position: fixed;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    box-shadow: -2px 1px 10px 1px var(--mainColor);
+    opacity: 0;
+    z-index: 9;
+}
+.main-header .list-nav .link-nav {
+    position: relative;
+    z-index: 1;
+    padding: 10px 0;
+}
+
+.main-header .list-nav .list-item-nav .link-nav::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 3px;
+    display: block;
+    background-color: var(--whait);
+    z-index: -1;
+    bottom: 0;
+    width: 0%;
+    transition: width 0.4s;
+}
+.main-header .list-nav .list-item-nav:hover .link-nav::before {
+    width: 100%;
+}
+.main-header .list-nav .list-item-nav .link-nav:hover {
+    color: var(--whait);
+}
+/*=========================
+2-End Main Header Style */
+
+/*=========================
+3-Start Login Page Style */
+
+.content-input {
+    position: relative;
+    display: inline-block;
+}
+
+.content-input i {
+    position: absolute;
+    left: 0;
+    top: 10px;
+    bottom: 10px;
+    height: 37px;
+    line-height: 37px;
+    width: 37px;
+    text-align: center;
+    box-shadow: 1px 1px 5px var(--mainColor);
+}
+
+.content-input input {
+    border: none;
+}
+
+.login-page form button {
+    border: 1px solid var(--mainColor);
+}
+
+.login-page form button:hover {
+    background-color: transparent;
+    color: var(--mainColor);
+}
+
+.fa-door-open {
+    display: none;
+}
+
+.login-page form button:hover .fa-door-open {
+    display: inline-block;
+}
+
+.login-page form button:hover .fa-door-closed {
+    display: none;
+}
+
+/*=========================
+3-End Login Page Style */
+
+/*=========================
+4-Start Admin Page Style */
+/* ====
+4.1-Products */
+/* =====
+4.2-Logins */
+.centet-by-name {
+    position: relative;
+}
+.centet-by-name .icon-search {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.link-longins {
+    background-color: var(--whait);
+    border: 1px solid var(--mainColor);
+    border-radius: 5px;
+}
+
+.block {
+    display: block;
+}
+
+.hide-logins {
+    display: none;
+}
+
+.login-active,
+.link-longins:hover {
+    background-color: var(--mainColor);
+    color: var(--whait);
+}
+
+/*=========================
+4-End Admin Page Style */
+
+/*=========================
+5-Start Order Page Style */
+
+/*=========================
+5-End Order Page Style */
+
+/*=========================
+6-Start Custem Page Style */
+
+/*=========================
+6-End Custem Page Style */
+
+/*=========================
+7-Start Mian Footer Style */
+
+/*=========================
+7-End Mian Footer Style */

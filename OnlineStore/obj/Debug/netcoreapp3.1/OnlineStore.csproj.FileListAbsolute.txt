@@ -1,0 +1,5 @@
+F:\projects\OnlineStore\OnlineStore\obj\Debug\netcoreapp3.1\OnlineStore.csprojAssemblyReference.cache
+F:\projects\OnlineStore\OnlineStore\obj\Debug\netcoreapp3.1\OnlineStore.AssemblyInfoInputs.cache
+F:\projects\OnlineStore\OnlineStore\obj\Debug\netcoreapp3.1\OnlineStore.AssemblyInfo.cs
+F:\projects\OnlineStore\OnlineStore\obj\Debug\netcoreapp3.1\OnlineStore.csproj.CoreCompileInputs.cache
+F:\projects\OnlineStore\OnlineStore\obj\Debug\netcoreapp3.1\OnlineStore.MvcApplicationPartsAssemblyInfo.cache

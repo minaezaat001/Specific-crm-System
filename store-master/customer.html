@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/vandors/bootstrap.min.css">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="css/vandors/all.min.css">
+    <!-- Mian-Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Customers</title>
+</head>
+
+<body>
+    <!-- ========================================================
+    Start Main Header-->
+    <header class="main-header bg-main-color color-whait py-3 font-size">
+        <div class="container">
+            <div class="header-contanet d-flex">
+                <i class="fa fa-bars click-pull open-nav-list"></i>
+                <div class="logo">
+                    <div class="logo-text">Store</div>
+                </div>
+            </div> <!-- ./ header-contanet-->
+            <ul class="list-nav bg-main-color p-5">
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="admin.html" class="link-nav color-whait">Products</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3 drop-pearnt">
+                    <a href="logins.html" class="link-nav color-whait">Logins</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="admin-order.html" class="link-nav color-whait">Orders</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="customer.html" class="link-nav color-whait">Customers</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="users.html" class="link-nav color-whait">Users</a>
+                </li>
+            </ul> <!-- ./list-nav -->
+        </div>
+    </header>
+    <!-- ========================================================
+    End Main Header-->
+
+    <section class="py-5">
+        <div class="title text-center mb-5">
+            <h2 class="title-page">Customers</h2>
+        </div>
+
+        <div class="container">
+            <!-- =====================
+            Start Search By Name -->
+            <div class="seacrh-by-name my-5" id="byname">
+                <form>
+                    <div class="centet-by-name w-50 mx-auto">
+                        <input type="text" class="w-100 border px-3 py-2" placeholder="Name">
+                        <i class="fa fa-search mx-2 icon-search click-pull bg-main-color color-whait p-2"></i>
+                    </div>
+                </form>
+
+                <!-- ====================
+        Logins Main Table -->
+                <div class="block table-responsive" id="today">
+                    <table class="table mt-5 mx-auto table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Id</th>
+                                <th scope="col">User Name</th>
+                                <th scope="col">Time</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>test</td>
+                                <td>05:00</td>
+                            </tr>
+                        </tbody>
+                    </table> <!-- ./Main Table -->
+                </div>
+                <!-- ====================
+                End Logins Main Table -->
+
+            </div>
+            <!-- =====================
+            End Search By Name -->
+        </div> <!-- ./container -->
+
+    </section>
+    <!-- ================================================
+    Start Main Footer -->
+    <footer class="py-3 footer bg-main-color color-whait bottom">
+        <div class="text-center">
+            <span class="copy-right font-size">Copy Right &copy; 2020 Pnetworkers</span>
+        </div>
+    </footer>
+    <!-- ================================================
+    End Main Footer -->
+
+    <!-- Laibiry-Jquery -->
+    <script src="js/vandors/jquery.js"></script>
+    <!-- Bootstarp -->
+    <script src="js/vandors/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

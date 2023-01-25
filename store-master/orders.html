@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/vandors/bootstrap.min.css">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="css/vandors/all.min.css">
+    <!-- Mian-Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>New Order</title>
+</head>
+
+<body>
+    <!-- ========================================================
+    Start Main Header-->
+    <header class="main-header bg-main-color color-whait py-3 font-size">
+        <div class="container">
+            <div class="header-contanet d-flex">
+                <i class="fa fa-bars click-pull open-nav-list"></i>
+                <div class="logo">
+                    <div class="logo-text">Store</div>
+                </div>
+            </div> <!-- ./ header-contanet-->
+            <ul class="list-nav bg-main-color p-5">
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="orders.html" class="link-nav color-whait">New Order</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="all-orders.html" class="link-nav color-whait">All Order</a>
+                </li>
+            </ul> <!-- ./list-nav -->
+        </div>
+    </header>
+    <!-- ========================================================
+    End Main Header-->
+
+    <!-- ========================================================
+    Start All-Orders Page-->
+
+    <section class=" py-5 ">
+        <div class="title text-center mb-5">
+            <h2 class="title-page">New Order</h2>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-5">
+                    <form>
+                        <div class="title mb-5">
+                            <h4 class="titile-form">Order Date</h4>
+                        </div>
+                        <div class="row">
+                            <div class="col-4 text-center">
+                                <div class="border px-2 py-3">
+                                    <span class="title-box mx-2 ">Product</span>
+                                    <i class="fas fa-box-open  p-2 bg-main-color color-whait"></i>
+                                    <select class="w-100 border p-2 mt-2">
+                                        <optgroup label="Product"></optgroup>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                        <option value="">Test</option>
+                                    </select>
+                                </div>
+                            </div> <!-- ./col -->
+                            <div class="col-2 text-center p-0">
+                                <div class=" py-3 border-top border-bottom px-1">
+                                    <span class="title-box mx-2">Size</span>
+                                    <i class="fa fa-list-ol  p-2 bg-main-color color-whait"></i>
+                                    <select class="w-100 border p-2 mt-2">
+                                        <optgroup label="Size"></optgroup>
+                                        <option value="">S</option>
+                                        <option value="">M</option>
+                                        <option value="">L</option>
+                                        <option value="">XL</option>
+                                    </select>
+                                </div>
+                            </div> <!-- ./col -->
+                            <div class="col-6">
+                                <div class="border px-2 py-3 ">
+                                    <div class="text-center mb-3">
+                                        <span class="title-box mx-2">Shipping</span>
+                                        <i class="fa fa-car  p-2 bg-main-color color-whait"></i>
+                                    </div>
+                                    <div class="mt-2 d-flex mt-2 align-items-center justify-content-center">
+                                        <div class="checed mr-2">
+                                            <label for="store">Store</label>
+                                            <input type="radio">
+                                        </div>
+                                        <div class="checed">
+                                            <label for="others">Others</label>
+                                            <input type="radio">
+                                        </div>
+                                        <div class="">
+                                            <select class="border p-2 mx-2 w-100">
+                                                <optgroup label="Price"></optgroup>
+                                                <option value="">25</option>
+                                                <option value="">50</option>
+                                                <option value="">75</option>
+                                                <option value="">100</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div> <!-- ./col -->
+                        </div> <!-- ./row -->
+                        <input class="w-100 mt-3 border p-2" type="text" placeholder="Price">
+                        <input class="w-100 mt-3 border p-2" type="text" placeholder="Total">
+                        <textarea class="w-100 mt-3 border p-2" cols="30" rows="10" placeholder="Notes....."></textarea>
+                    </form> <!-- from-Ordar Data -->
+                </div> <!-- ./col -->
+                <div class="col-lg-6">
+                    <div class="title mb-5">
+                        <h4 class="titile-form">Custom Date</h4>
+                    </div>
+                    <form>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fa fa-user p-3 bg-main-color color-whait"></i>
+                            <input class="w-100 border p-2" type="text" placeholder="Name">
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fa fa-map-marker-alt p-3 bg-main-color color-whait"></i>
+                            <input class="w-100 border p-2" type="text" placeholder="Address">
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fa fa-phone p-3    bg-main-color color-whait"></i>
+                            <input class="w-100 border p-2" type="text" placeholder="Phone">
+                        </div>
+                        <div class="d-flex align-items-center mt-3">
+                            <i class="fa fa-phone p-3    bg-main-color color-whait"></i>
+                            <input class="w-100  border p-2" type="text" placeholder="Others Phone">
+                        </div>
+                        <button class="btn mt-5 btn-lg w-100 bg-color-add color-whait btn-min click-pull">
+                            Add Order
+                        </button>
+                    </form>
+                </div> <!-- ./col -->
+            </div> <!-- ./row -->
+        </div> <!-- ./continer -->
+    </section>
+    <!-- ================================================
+    Start Main Footer -->
+    <footer class="py-3 footer bg-main-color color-whait">
+        <div class="text-center">
+            <span class="copy-right font-size">Copy Right &copy; 2020 Pnetworkers</span>
+        </div>
+    </footer>
+    <!-- ================================================
+    End Main Footer -->
+
+    <!-- Laibiry-Jquery -->
+    <script src="js/vandors/jquery.js"></script>
+    <!-- Bootstarp -->
+    <script src="js/vandors/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

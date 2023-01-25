@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/vandors/bootstrap.min.css">
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="css/vandors/all.min.css">
+    <!-- Mian-Style -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Users</title>
+</head>
+
+<body>
+
+    <!-- ========================================================
+    Start Main Header-->
+    <header class="main-header bg-main-color color-whait py-3 font-size">
+        <div class="container">
+            <div class="header-contanet d-flex">
+                <i class="fa fa-bars click-pull open-nav-list"></i>
+                <div class="logo">
+                    <div class="logo-text">Store</div>
+                </div>
+            </div> <!-- ./ header-contanet-->
+            <ul class="list-nav bg-main-color p-5">
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="admin.html" class="link-nav color-whait">Products</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3 drop-pearnt">
+                    <a href="logins.html" class="link-nav color-whait">Logins</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="admin-order.html" class="link-nav color-whait">Orders</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="customer.html" class="link-nav color-whait">Customers</a>
+                </li>
+                <li class="list-item-nav click-pull mt-3">
+                    <a href="users.html" class="link-nav color-whait">Users</a>
+                </li>
+            </ul> <!-- ./list-nav -->
+        </div>
+    </header>
+    <!-- ========================================================
+    End Main Header-->
+
+    <!-- ========================================================
+    Start user-Products Page-->
+    <section class="py-5 user-page">
+        <div class="title text-center mb-5">
+            <h2 class="title-page"> Users</h2>
+        </div>
+        <div class="container">
+            <form class="form-add">
+                <div class="title  mb-5">
+                    <h4 class="titile-form">Create User</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <input type="text" class="w-100 border px-3 py-2" placeholder="Name">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <input type="text" class="w-100 border px-3 py-2" placeholder="Phone">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3">
+                        <input type="text" min="0" class="w-100 border px-3 py-2" placeholder="User Name">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <input type="password" min="0" class="w-100 border px-3 py-2" placeholder="password">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3">
+                        <select class="w-100 border px-3 py-2">
+                            <optgroup label="Kind"></optgroup>
+                            <option value="Admin">Admin</option>
+                            <option value="Ordertaker">Order Taker</option>
+                            <option value="Comfermation">Comfermation</option>
+                        </select>
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <button class="btn btn-lg  bg-color-add color-whait btn-min p-1 w-100">Add User
+                            <i class="fa fa-plus"></i>
+                        </button>
+                    </div> <!-- ./col -->
+                </div> <!-- ./row -->
+            </form> <!-- ./from -->
+
+            <!-- Start Form Edit -->
+            <form class="form-update">
+                <div class="title mb-5">
+                    <h4 class="titile-form">Update User</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 mb-3">
+                        <input type="text" class="w-100 border px-3 py-2" placeholder="Name">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <input type="text" class="w-100 border px-3 py-2" placeholder="Phone">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3">
+                        <input type="text" min="0" class="w-100 border px-3 py-2" placeholder="User Name">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <input type="password" min="0" class="w-100 border px-3 py-2" placeholder="password">
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3">
+                        <select class="w-100 border px-3 py-2">
+                            <optgroup label="Kind"></optgroup>
+                            <option value="Admin">Admin</option>
+                            <option value="Ordertaker">Order Taker</option>
+                            <option value="Comfermation">Comfermation</option>
+                        </select>
+                    </div> <!-- ./col -->
+                    <div class="col-sm-6 mb-3 p-sml-0">
+                        <div class="d-flex">
+                            <button class="btn btn-lg bg-color-add color-whait btn-min p-1 w-50">Update
+                                <i class="fas fa-save    "></i>
+                            </button>
+                            <button class="btn btn-lg color-whait btn-min remove-btn p-1 w-50 ml-2">Delete
+                                <i class="fa fa-trash" aria-hidden="true"></i>
+                            </button>
+                        </div>
+                    </div> <!-- ./col -->
+                </div> <!-- ./row -->
+            </form> <!-- ./from -->
+            
+            <!-- ====================
+            Main Table -->
+            <div class="table-responsive">
+                <table class="table mt-5 w-100 mx-auto table-hover">
+                    <thead class="thead-dark">
+                        <tr>
+                            <th scope="col">Edit</th>
+                            <th scope="col">Name</th>
+                            <th scope="col">Phone</th>
+                            <th scope="col">User Name</th>
+                            <th scope="col">Password</th>
+                            <th scope="col">Kind</th>
+                            <th scope="col">Id</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">
+                                <i class="fas fa-edit   click-pull "></i>
+                            </th>
+                            <td>admin</td>
+                            <td>5555</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <i class="fas fa-edit   click-pull "></i>
+                            </th>
+                            <td>admin</td>
+                            <td>5555</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <i class="fas fa-edit   click-pull "></i>
+                            </th>
+                            <td>admin</td>
+                            <td>5555</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">
+                                <i class="fas fa-edit   click-pull "></i>
+                            </th>
+                            <td>admin</td>
+                            <td>5555</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>admin</td>
+                            <td>1</td>
+                        </tr>
+                    </tbody>
+                </table> <!-- ./Main Table -->
+            </div>
+        </div> <!-- ./container -->
+    </section>
+    <!-- ========================================================
+    End Admin-Products Page-->
+
+    <!-- ================================================
+    Start Main Footer -->
+    <footer class="py-3 footer bg-main-color color-whait">
+        <div class="text-center">
+            <span class="copy-right font-size">Copy Right &copy; 2020 Pnetworkers</span>
+        </div>
+    </footer>
+    <!-- ================================================
+    End Main Footer -->
+
+    <!-- Laibiry-Jquery -->
+    <script src="js/vandors/jquery.js"></script>
+    <!-- Bootstarp -->
+    <script src="js/vandors/bootstrap.min.js"></script>
+    <!-- Main Script -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
